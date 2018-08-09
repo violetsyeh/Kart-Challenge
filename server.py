@@ -5,7 +5,10 @@ from flask import (Flask, render_template, redirect, request, flash,
 
 from model import Product, connect_to_db, db
 
+import requests
+
 app = Flask(__name__)
+
 
 app.secret_key = "ABC"
 
@@ -14,6 +17,14 @@ def index():
 	"""Homepage."""
 
 	return render_template("index.html")
+
+@app.route('/add-to-kart', methods=['GET'])
+def add_to_kart():
+
+    item = request.args.get("item")
+    
+    return render_template("index.html")
+
 
 
 

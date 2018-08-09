@@ -20,10 +20,11 @@ def index():
 
 @app.route('/add-to-kart', methods=['GET'])
 def add_to_kart():
-
+    """Get item to add to kart"""
+    
     item = request.args.get("item")
     
-    return render_template("index.html")
+    return item
 
 
 

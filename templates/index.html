@@ -6,6 +6,7 @@
   <title>Kart</title>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" type="text/css" href="static/css/styles.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
@@ -114,9 +115,18 @@
 <div class="ui-widget">
   <label for="tags">Items: </label>
   <input id="tags" name="item">
-  <input type="submit" name="Submit">
+  <input id = "update-status" type="submit" name="Submit">
 </div>
 </form>
- 
+<br/>
+ <div class="kart">
+    Current kart: <br/>
+    <id ="kart-status"></id>
+    <script src="/static/js/kart-status.js"></script>
+    
+
+</div>
+
+
 </body>
 </html>

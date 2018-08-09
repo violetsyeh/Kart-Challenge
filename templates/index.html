@@ -1,16 +1,122 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <!-- Latest compiled and minified bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/css/styles.css">
-    <title>Kart</title>
-  </head>
-  <body>
-    <div id="content"></div>
-    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kart</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+
+<form action = "/add-to-kart" method="GET">
+  <script>
+  $( function() {
+    var availableTags = [
+  "cherimoya",
+  "cherry",
+  "pineapple",
+  "pinapple",
+  "pine nuts",
+  "almonds",
+  "milk",
+  "almond milk",
+  "broccoli",
+  "broccolini",
+  "pie",
+  "cherry pie",
+  "blueberry pie",
+  "blueberries",
+  "apples",
+  "apple pie",
+  "avocado",
+  "sugar",
+  "bacon",
+  "eggs",
+  "tofu",
+  "tofurkey",
+  "potatoes",
+  "patatoes",
+  "bananas",
+  "grapes",
+  "grapefruit",
+  "grapefruit juice",
+  "grape juice",
+  "orange juice",
+  "oranges",
+  "orange bandana",
+  "orangutan stuffed animal",
+  "oranigram games and puzzled",
+  "diapers",
+  "tea tree shampoo",
+  "hand soap",
+  "dishsoap",
+  "hand sanitizer",
+  "paper plates",
+  "paper towels",
+  "raspberries",
+  "cat food",
+  "tuna fish",
+  "kibbles",
+  "English breakfast tea",
+  "green tea",
+  "cherry chapstick",
+  "sirloin steak",
+  "New York strip steak",
+  "chicken nuggets",
+  "sparkling water",
+  "coconut water",
+  "coconut flakes",
+  "taco mix",
+  "trailmix",
+  "spam",
+  "beef broth",
+  "chicken soup",
+  "tomato soup",
+  "cherry tomatoes",
+  "beefsteak tomatoes",
+  "sun-dried tomatoes",
+  "sunscreen",
+  "sunblock",
+  "shaving cream",
+  "whipped cream",
+  "creamy tomato soup",
+  "chocolate candy bar",
+  "chocolate-covered cherries",
+  "milk",
+  "chocolate milk",
+  "protein bar",
+  "bar soap",
+  "pickles",
+  "pickled fish",
+  "olive oil",
+  "olives",
+  "coconut oil",
+  "avocado oil",
+  "zucchini",
+  "zuchini",
+  "peanut butter",
+  "almond butter",
+  "peanuts",
+  "macadamia nuts",
+  "butter"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
   
-  </body>
+  </script>
+
+
+<div class="ui-widget">
+  <label for="tags">Items: </label>
+  <input id="tags" name="item">
+  <input type="submit" name="Submit">
+</div>
+</form>
+ 
+</body>
 </html>
